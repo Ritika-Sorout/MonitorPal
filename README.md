@@ -41,54 +41,53 @@
 
 ### Problem we are trying to solve?
 
-Due to Covid 19, remote learning has been a constant and so have been online examinations. 
-<br />
+Due to Covid-19, remote learning has been a constant and so have online examinations.  
 But proctoring has always been a task and cheating and unfair practices have always been a problem.
-<br />
 
-**Problems with the exisiting sytem?**
+**Problems with the existing system:**
 
-The current solutions assumes to have 2 platforms 
-- One for testing purposes like Google Form for writing exams 
-- And another, video conferencing platforms like meet or zoom for manual proctoring.
+The current solutions assume the presence of two platforms:  
+- One for writing exams (like Google Forms)  
+- And another (like Meet or Zoom) for manual proctoring
 
-Our PS poses to develop an application that can automatically proctor and monitor students, without the need of manual proctoring - ie without a teacher's aid.
+**MonitorPal** aims to replace the need for human invigilation by automatically monitoring student behavior during the test — no teacher needed.
 
 ### Market & User Research
 
-- On market research, the products available found, are paid.
-- On user research and feedback from students, UX of such platforms isn't upto the mark.
-- UX from the client's end isn't frictionless, it was expected by the client to upload questions on their platforms. 
-- The existing product doesn't seem to have an accessible Admin Dashboard.
+- Existing tools are largely paid.
+- Students find the UX of such platforms clunky.
+- Educators often need to manually upload or format tests.
+- No real-time admin dashboard or control panel is available.
 
-That's where we come into picture.
-<br />
+That’s where **MonitorPal** steps in.  
+A smart, intuitive, and unified platform.
+
 <br />
 
 ## Architecture and Design
 
-The tradeoff in a Hackathon: `Speed over quality`
-
-But something that we are proud of is, we tried to follow ideal software development practices.
+Hackathon tradeoff: `Speed over quality`  
+But we’re proud to say we kept structure and best practices in mind:
 
 - Architecture
 - Design
 - Code
-<br />
 
-The presentation for Aankh can be found [here](https://docs.google.com/presentation/d/1h3WqCwEhf5xG7TsZ-yNuDoE9ybbFiaAMEsltQ3KrLEc/edit?usp=sharing).
+[📊 Presentation for MonitorPal](https://docs.google.com/presentation/d/1h3WqCwEhf5xG7TsZ-yNuDoE9ybbFiaAMEsltQ3KrLEc/edit?usp=sharing)
 
 ### Architecture
 
-- The architecture and workflow was built using [excalidraw](https://excalidraw.com) and it is freaking [brilliant](https://github.com/excalidraw/excalidraw).
+- Built and visualized using [excalidraw](https://excalidraw.com)
+
 <br />
 <img src="./images/architecture.svg" />
 <br />
 
 ### Design
 
-- The designs were built using [Figma](figma.com) and were brought to life with [React](https://beta.reactjs.org).
-- [Design Link](https://www.figma.com/file/pbuXQGcgFpsi2lgEbtllXf/aankh)
+- Designed in [Figma](figma.com)
+- Developed using [React](https://beta.reactjs.org)  
+[🎨 Figma Design Link](https://www.figma.com/file/pbuXQGcgFpsi2lgEbtllXf/aankh)
 
 <br />
   <img src="./images/all_designs.svg" />
@@ -96,294 +95,34 @@ The presentation for Aankh can be found [here](https://docs.google.com/presentat
 
 ## Demonstration
 
-<br />
-
-**Landing Page**
+### Landing Page
 
 <p align="left">
-  <img src='./images/landing_1.png' alt='Intro Screen' width="80%">
-  <img src='./images/landing_2.png' alt='Features' width="80%">
-  <img src='./images/landing_3.png' alt='Features 2' width="80%">
+  <img src='./images/landing_1.png' width="80%">
+  <img src='./images/landing_2.png' width="80%">
+  <img src='./images/landing_3.png' width="80%">
 </p>
 
-<br />
-<br />
-
-**Register & Login**
-<br />
+### Register & Login
 
 <table>
-    <tr>
-        <td>
-            <img src='./images/register.png' alt='REGISTER'>
-        </td>
-        <td>
-            <img src='./images/login.png' alt='LOGIN'>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <p>User Registration - Face Verifacation to be done when exam starts.</p>
-        </td>
-        <td>
-          <p>User Login to start the exam.</p>
-        </td>
-    </tr>
+  <tr>
+    <td><img src='./images/register.png'></td>
+    <td><img src='./images/login.png'></td>
+  </tr>
+  <tr>
+    <td>User registers. Face verification kicks in once the exam begins.</td>
+    <td>User login to access the test.</td>
+  </tr>
 </table>
 
-<br />
-
-**Creating a Test and Dashbaord**
-
-<br />
+### Create Test & Dashboard
 
 <table>
-    <tr>
-        <td>
-            <img src='./images/create.png' alt='Create Test'>
-        </td>
-        <td>
-            <img src='./images/dashboard.png' alt='Dashboard'>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <p>Creating a test and expecting a Google/Microsoft Form Link</p>
-        </td>
-        <td>
-          <p>Admin Dashboard: Tests arranged chronologically.</p>
-        </td>
-    </tr>
-</table>
+  <tr>
+    <td><img src='./images/create.png'></td>
+    <td><img src='./images/dashboard.png'></td>
+  </tr>
+  <tr>
+    <
 
-<br />
-
-**Start Exam**
-
-- After logging in and entering the unique test code.
-- Live Snapshots will be captured, periodically and will be analysed for the following :
-  -  Face Verification
-  -  Face Cover/Visibility
-  -  Multiple People Detection
-<br />
-
-<img src='./images/exam.png' alt='Start Exam' width="80%">
-<br />
-
-**Building a chrome extension for track of tabs**
-
-<img src="https://user-images.githubusercontent.com/61280281/150633013-63494d63-13fd-4d97-8bed-b0700551cbe8.jpg" width="40%" />
-
-<br />
-
-**Checks for cheating**
-
-- Face Verification
-- Voice Detection
-- Multiple People Detection
-- Dev Tools Check
-- Multiple Tabs Check
-- Full Screen Check
-
-<br />
-
-<table>
-    <tr>
-        <td>
-            <img src='./images/test_response_1.png' alt='Full Screen Detect'>
-        </td>
-        <td>
-            <img src='./images/test_response_2.png' alt='Dev Tools'>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <img src='./images/test_response_3.png' alt='Face Not Visible'>
-        </td>
-        <td>
-            <img src='./images/test_response_4.png' alt='Multiple People'>
-        </td>
-    </tr>
-</table>
-
-<br />
-
-Also, **ideas rejected**: These were rejcted due to false positives and unsurity of cheating.
-
-- Eye Tracking
-- Object detection
-- Mouse Tracking
-
-<br />
-
-<br />
-
-**Test Admin Dashboard**
-
-- The following warning logs, data and statistics will be emailed to the Admin after the test.
-
-<br />
-
-<table>
-    <tr>
-        <td>
-            <img src='./images/test_dashboard_1.png' alt='Test Dashboard'>
-        </td>
-        <td>
-            <img src='./images/test_dashboard_2.png' alt='Test Dashboard 2'>
-        </td>
-    </tr>
-    <tr>
-        <td>
-          <p>Test Dashboard: Admin can see statistics - no. of students with warnings and above the threshold.</p>
-        </td>
-        <td>
-          <p>Admin Dashboard: Admin can Terminate or Continue a students exam based on warnings.</p>
-        </td>
-    </tr>
-</table>
-
-
-<br />
-
-## Technologies Used
-
-<br />
-
-- Workflow and Architecture Design
-  - Excalidraw
-- Prototyping and Frontend Design
-  - Figma
-- Frontend
-  - React.js
-  - CSS
-- Backend
-  - Node.js (Express.js)
-  - MongoDB
-- Machine Learning
-  - OpenCV
-  - Tensorflow_hub
-  - Flask
-
-<br />
-
-**Dependencies**
-
-A freaking huge shoutout to:
-- [react-webcam](https://www.npmjs.com/package/react-webcam)
-- [devtools-detect](https://www.npmjs.com/package/devtools-detect)
-- [react-chartjs-2](https://www.npmjs.com/package/react-chartjs-2)
-- [chartjs](https://www.npmjs.com/package/chartjs)
-
-<br />
-<br />
-
-## Contributing
-
-**Local Setup || Project Structure**
-
-NOTE: Individual instructions can be found in respective directories.
-
-- The project contains 4 broad directories.
-
-```
-*
-├───client
-├───extension
-├───model
-└───server
-```
-
-- `client`: The frontend for the application.
-- `extension`: Chrome/Edge extension to keep a track of browser tabs.
-- `model`: Model APIs for Machine Learning.
-- `server`: The backend for the application.
-
-<br />
-
-**Client**
-
-For local setup of frontend:
-- `cd client`
-- `npm i`
-- `npm start`
-- Go to `localhost:3000`
-
-Structure
-
-```
-src
-├───assets
-├───components
-├───containers
-└───index.js
-```
-
-Individual Component & Container Structure
-
-```
-component
-├───component.jsx
-└───component.css
-```
-
-<br />
-<br />
-
-**Extension**
-
-Read [this](https://github.com/tusharnankani/LeadsTracker#using-this-extension) or [this](https://github.com/dheerajdlalwani/back-to-work/#how-to-install) for a brief description for installing extensions.
-- Open new tab & type: `chrome://extensions` or `edge://extensions`.
-- Look for the Developer mode toggle & turn it on if it's not already.
-- After cloning the repository, click on `Load Unpacked` and select the `extension` directory.
-
-<br />
-<br />
-
-**Model**
-
-The complete setup can be found in the [`model` directory](./model).
-
-NOTE:
-
-- Apart from this `tensorflow` and `tensorflow_hub` should be installed .
-- The face-pose-estimation model is not final it is just a placeholder for now(will improve it as we get time).
-- How to convert javascript array for image into image tensor that part is remaining.
-
-<br />
-<br />
-
-**Server**
-
-For local setup of backend:
-- `cd server`
-- `npm i`
-- `npm start`
-
-```
-server
-├───controllers
-├───middlewares
-├───models
-├───routes
-└───package.json
-```
-
-<br />
-<br />
-
-### License 📜
-
-[GNU General Public License v3.0](/LICENSE)
-
-
-### Authors
-
-- Vivek Namaye 
-  - [LinkedIn](https://www.linkedin.com/in/viveknamaye/)
-- Akshay Kanade 
-  - [LinkedIn](https://www.linkedin.com/in/akshaykanade/)
-- Tushar Nankani
-  - [Twitter](https://twitter.com/tusharnankanii) 
-
-<sub>We are Team VAT, not Value Added Tax, but Vivek, Akshay and myself, Tushar.</sub>

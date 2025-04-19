@@ -64,16 +64,8 @@ A smart, intuitive, and unified platform.
 
 <br />
 
-## Architecture and Design
 
-Hackathon tradeoff: `Speed over quality`  
-But we’re proud to say we kept structure and best practices in mind:
 
-- Architecture
-- Design
-- Code
-
-[📊 Presentation for MonitorPal](https://docs.google.com/presentation/d/1h3WqCwEhf5xG7TsZ-yNuDoE9ybbFiaAMEsltQ3KrLEc/edit?usp=sharing)
 
 ### Architecture
 
